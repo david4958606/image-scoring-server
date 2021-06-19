@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+    imgserver:
+        container_name: imgserver
+        build: .
+        dns: [1.1.1.1]
+        volumes:
+            - ./image-scoring-server:/image-scoring-server
+        restart: always
+        network_mode: 'host'
