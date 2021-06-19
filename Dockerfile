@@ -17,4 +17,4 @@ RUN apt-get update \
     && make install
 
 COPY ./image-mark /root/
-CMD [ "cd /root/image-mark/", "python3 server_quart.py users img pwd.txt" ]
+CMD [ "cd /root/image-mark/", "python3 server_quart.py users images pwd.txt" ]
